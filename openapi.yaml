@@ -1,0 +1,811 @@
+openapi: 3.0.0
+info:
+  title: DayMark API
+  description: |
+    A personal daily task-planning and productivity-tracking API.
+    
+    ## Features
+    - User registration and authentication
+    - CRUD operations for daily tasks
+    - Task filtering, pagination, and sorting
+    - Daily productivity calculation
+    - Historical performance tracking
+    - Aggregate productivity statistics
+  version: 1.0.0
+  contact:
+    name: DayTrack Team
+    email: support@daytrack.com
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:8000
+    description: Development server
+  - url: https://api.daytrack.com
+    description: Production server
+
+tags:
+  - name: Authentication
+    description: User registration and login
+  - name: Tasks
+    description: Task management operations
+  - name: Productivity
+    description: Productivity analytics
+
+paths:
+  # ==================== AUTHENTICATION ====================
+  /api/v1/auth/register:
+    post:
+      tags:
+        - Authentication
+      summary: Register a new user
+      description: Creates a new user account with email and password
+      operationId: registerUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '409':
+          description: Email already exists
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                status: 409
+                error: Conflict
+                message: Email already registered
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /api/v1/auth/login:
+    post:
+      tags:
+        - Authentication
+      summary: Authenticate user
+      description: Login with email and password to receive an access token
+      operationId: loginUser
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthResponse'
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                status: 401
+                error: Unauthorized
+                message: Invalid email or password
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ==================== TASKS ====================
+  /api/v1/tasks:
+    post:
+      tags:
+        - Tasks
+      summary: Create a new task
+      description: Creates a task for a specific date
+      operationId: createTask
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTaskRequest'
+      responses:
+        '201':
+          description: Task created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    get:
+      tags:
+        - Tasks
+      summary: List tasks
+      description: |
+        Get all tasks for the authenticated user with optional filtering,
+        pagination, and sorting.
+      operationId: listTasks
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: page
+          in: query
+          description: Page number (1-indexed)
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          description: Number of tasks per page
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+        - name: date
+          in: query
+          description: Filter tasks by specific date (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-08-27"
+        - name: status
+          in: query
+          description: Filter by task status
+          schema:
+            type: string
+            enum: [pending, completed]
+        - name: priority
+          in: query
+          description: Filter by priority level
+          schema:
+            type: string
+            enum: [low, medium, high]
+        - name: sort
+          in: query
+          description: Field to sort by
+          schema:
+            type: string
+            enum: [created_at, updated_at, date, priority]
+            default: created_at
+        - name: order
+          in: query
+          description: Sort order
+          schema:
+            type: string
+            enum: [asc, desc]
+            default: desc
+      responses:
+        '200':
+          description: List of tasks retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskListResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /api/v1/tasks/{task_id}:
+    get:
+      tags:
+        - Tasks
+      summary: Get a specific task
+      description: Retrieve a single task by its ID
+      operationId: getTask
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          description: Task ID (UUID)
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Task retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          description: Access denied - task belongs to another user
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                status: 403
+                error: Forbidden
+                message: You do not have access to this task
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    patch:
+      tags:
+        - Tasks
+      summary: Update a task
+      description: Update one or more fields of an existing task
+      operationId: updateTask
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          description: Task ID (UUID)
+          schema:
+            type: string
+            format: uuid
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateTaskRequest'
+      responses:
+        '200':
+          description: Task updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TaskResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+    delete:
+      tags:
+        - Tasks
+      summary: Delete a task
+      description: Permanently delete a task
+      operationId: deleteTask
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: task_id
+          in: path
+          required: true
+          description: Task ID (UUID)
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '204':
+          description: Task deleted successfully
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          description: Access denied
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  # ==================== PRODUCTIVITY ====================
+  /api/v1/productivity/daily/{date}:
+    get:
+      tags:
+        - Productivity
+      summary: Get daily productivity
+      description: Get completion percentage and task counts for a specific day
+      operationId: getDailyProductivity
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: date
+          in: path
+          required: true
+          description: Date to retrieve productivity for (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-08-27"
+      responses:
+        '200':
+          description: Daily productivity retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DailySummaryResponse'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '404':
+          description: No tasks found for this date
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                status: 404
+                error: Not Found
+                message: No tasks found for date 2026-08-27
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /api/v1/productivity/history:
+    get:
+      tags:
+        - Productivity
+      summary: Get productivity history
+      description: Get daily productivity for a date range
+      operationId: getProductivityHistory
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: start_date
+          in: query
+          required: true
+          description: Start date (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-08-01"
+        - name: end_date
+          in: query
+          required: true
+          description: End date (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-08-31"
+      responses:
+        '200':
+          description: Productivity history retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductivityHistoryResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+  /api/v1/productivity/summary:
+    get:
+      tags:
+        - Productivity
+      summary: Get aggregate productivity summary
+      description: Get aggregated statistics over a specified period
+      operationId: getProductivitySummary
+      security:
+        - BearerAuth: []
+      parameters:
+        - name: start_date
+          in: query
+          required: true
+          description: Start date (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-08-01"
+        - name: end_date
+          in: query
+          required: true
+          description: End date (YYYY-MM-DD)
+          schema:
+            type: string
+            format: date
+            example: "2026-08-31"
+      responses:
+        '200':
+          description: Productivity summary retrieved
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductivitySummaryResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '500':
+          $ref: '#/components/responses/InternalServerError'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: |
+        JWT token obtained from /api/v1/auth/login.
+        Include in Authorization header as: Bearer <token>
+
+  schemas:
+    # ====== AUTHENTICATION SCHEMAS ======
+    RegisterRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: user@example.com
+          description: User's email address
+        password:
+          type: string
+          format: password
+          minLength: 8
+          example: SecurePass123
+          description: Password (min 8 characters)
+      additionalProperties: false
+
+    LoginRequest:
+      type: object
+      required:
+        - email
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: user@example.com
+        password:
+          type: string
+          format: password
+          example: SecurePass123
+      additionalProperties: false
+
+    AuthResponse:
+      type: object
+      properties:
+        access_token:
+          type: string
+          description: JWT access token
+        token_type:
+          type: string
+          example: bearer
+        expires_in:
+          type: integer
+          description: Token expiration in seconds
+          example: 3600
+        user:
+          $ref: '#/components/schemas/UserResponse'
+
+    UserResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        email:
+          type: string
+          format: email
+          example: user@example.com
+        created_at:
+          type: string
+          format: date-time
+          example: "2026-08-26T10:00:00Z"
+        updated_at:
+          type: string
+          format: date-time
+          example: "2026-08-26T10:00:00Z"
+
+    # ====== TASK SCHEMAS ======
+    CreateTaskRequest:
+      type: object
+      required:
+        - title
+        - date
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+          example: "Complete project proposal"
+        description:
+          type: string
+          maxLength: 1000
+          example: "Draft and review Q4 proposal"
+        date:
+          type: string
+          format: date
+          example: "2026-08-27"
+        priority:
+          type: string
+          enum: [low, medium, high]
+          default: medium
+      additionalProperties: false
+
+    UpdateTaskRequest:
+      type: object
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+          example: "Complete Q4 proposal"
+        description:
+          type: string
+          maxLength: 1000
+          example: "Draft, review, and submit Q4 proposal"
+        date:
+          type: string
+          format: date
+          example: "2026-08-28"
+        priority:
+          type: string
+          enum: [low, medium, high]
+          example: high
+        status:
+          type: string
+          enum: [pending, completed]
+          example: completed
+      additionalProperties: false
+      minProperties: 1
+
+    TaskResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "123e4567-e89b-12d3-a456-426614174000"
+        user_id:
+          type: string
+          format: uuid
+          example: "123e4567-e89b-12d3-a456-426614174001"
+        title:
+          type: string
+          example: "Complete project proposal"
+        description:
+          type: string
+          example: "Draft and review Q4 proposal"
+        date:
+          type: string
+          format: date
+          example: "2026-08-27"
+        priority:
+          type: string
+          enum: [low, medium, high]
+          example: high
+        status:
+          type: string
+          enum: [pending, completed]
+          example: pending
+        created_at:
+          type: string
+          format: date-time
+          example: "2026-08-26T10:30:00Z"
+        updated_at:
+          type: string
+          format: date-time
+          example: "2026-08-26T10:30:00Z"
+        completed_at:
+          type: string
+          format: date-time
+          nullable: true
+          example: null
+
+    TaskListResponse:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/TaskResponse'
+        pagination:
+          type: object
+          properties:
+            page:
+              type: integer
+              example: 1
+            limit:
+              type: integer
+              example: 20
+            total:
+              type: integer
+              example: 45
+            total_pages:
+              type: integer
+              example: 3
+
+    # ====== PRODUCTIVITY SCHEMAS ======
+    DailySummaryResponse:
+      type: object
+      properties:
+        date:
+          type: string
+          format: date
+          example: "2026-08-27"
+        total_tasks:
+          type: integer
+          minimum: 0
+          example: 8
+        completed_tasks:
+          type: integer
+          minimum: 0
+          example: 6
+        completion_percentage:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+          example: 75.0
+
+    ProductivityHistoryResponse:
+      type: object
+      properties:
+        history:
+          type: array
+          items:
+            $ref: '#/components/schemas/DailySummaryResponse'
+        period:
+          type: object
+          properties:
+            start_date:
+              type: string
+              format: date
+              example: "2026-08-01"
+            end_date:
+              type: string
+              format: date
+              example: "2026-08-31"
+
+    ProductivitySummaryResponse:
+      type: object
+      properties:
+        period:
+          type: string
+          example: "2026-08-01 to 2026-08-31"
+        total_tasks:
+          type: integer
+          minimum: 0
+          example: 120
+        completed_tasks:
+          type: integer
+          minimum: 0
+          example: 85
+        completion_percentage:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+          example: 70.83
+
+    # ====== ERROR SCHEMAS ======
+    ErrorResponse:
+      type: object
+      properties:
+        status:
+          type: integer
+          description: HTTP status code
+          example: 400
+        error:
+          type: string
+          description: Error type
+          example: Bad Request
+        message:
+          type: string
+          description: Detailed error message
+          example: "Invalid date format. Use YYYY-MM-DD."
+        timestamp:
+          type: string
+          format: date-time
+          example: "2026-08-26T10:30:00Z"
+        path:
+          type: string
+          description: Request path
+          example: "/api/v1/tasks"
+        details:
+          type: object
+          description: Additional validation details
+          additionalProperties: true
+
+    ValidationErrorResponse:
+      allOf:
+        - $ref: '#/components/schemas/ErrorResponse'
+        - type: object
+          properties:
+            details:
+              type: object
+              additionalProperties:
+                type: array
+                items:
+                  type: string
+              example:
+                email: ["Must be a valid email address"]
+                password: ["Must be at least 8 characters"]
+
+  responses:
+    BadRequest:
+      description: Bad request - invalid input
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ValidationErrorResponse'
+          example:
+            status: 400
+            error: Bad Request
+            message: "Invalid input data"
+            timestamp: "2026-08-26T10:30:00Z"
+            path: "/api/v1/tasks"
+            details:
+              title: ["Title is required"]
+              date: ["Invalid date format. Use YYYY-MM-DD"]
+
+    Unauthorized:
+      description: Unauthorized - missing or invalid token
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            status: 401
+            error: Unauthorized
+            message: "Invalid or expired token"
+            timestamp: "2026-08-26T10:30:00Z"
+            path: "/api/v1/tasks"
+
+    NotFound:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            status: 404
+            error: Not Found
+            message: "Task with ID 123e4567-e89b-12d3-a456-426614174000 not found"
+            timestamp: "2026-08-26T10:30:00Z"
+            path: "/api/v1/tasks/123e4567-e89b-12d3-a456-426614174000"
+
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            status: 500
+            error: Internal Server Error
+            message: "An unexpected error occurred"
+            timestamp: "2026-08-26T10:30:00Z"
+            path: "/api/v1/tasks"
+
+security:
+  - BearerAuth: []    
