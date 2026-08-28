@@ -1,0 +1,1538 @@
+[
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timezone",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "secrets",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "secrets",
+        "description": "secrets",
+        "detail": "secrets",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "resend",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "resend",
+        "description": "resend",
+        "detail": "resend",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "app.database",
+        "description": "app.database",
+        "isExtraImport": true,
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "StatusEnum",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "PriorityEnum",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "StatusEnum",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "importPath": "app.models",
+        "description": "app.models",
+        "isExtraImport": true,
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "OTPVerify",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "OTPRequest",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetRequest",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetConfirm",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChange",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "LoginResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "DailySummaryResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProductivityHistoryResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProductivitySummaryResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CreateTaskRequest",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateTaskRequest",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PaginationMeta",
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "isExtraImport": true,
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "get_password_hash",
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "isExtraImport": true,
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "isExtraImport": true,
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "isExtraImport": true,
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "isExtraImport": true,
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "isExtraImport": true,
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "isExtraImport": true,
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "uuid",
+        "description": "uuid",
+        "isExtraImport": true,
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "JWTError",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "jwt",
+        "importPath": "jose",
+        "description": "jose",
+        "isExtraImport": true,
+        "detail": "jose",
+        "documentation": {}
+    },
+    {
+        "label": "CryptContext",
+        "importPath": "passlib.context",
+        "description": "passlib.context",
+        "isExtraImport": true,
+        "detail": "passlib.context",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPBearer",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPAuthorizationCredentials",
+        "importPath": "fastapi.security",
+        "description": "fastapi.security",
+        "isExtraImport": true,
+        "detail": "fastapi.security",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "DateTime",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Date",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Boolean",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
+        "documentation": {}
+    },
+    {
+        "label": "UUID",
+        "importPath": "sqlalchemy.dialects.postgresql",
+        "description": "sqlalchemy.dialects.postgresql",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.dialects.postgresql",
+        "documentation": {}
+    },
+    {
+        "label": "enum",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "enum",
+        "description": "enum",
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "EmailStr",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "auth",
+        "importPath": "app.routers",
+        "description": "app.routers",
+        "isExtraImport": true,
+        "detail": "app.routers",
+        "documentation": {}
+    },
+    {
+        "label": "tasks",
+        "importPath": "app.routers",
+        "description": "app.routers",
+        "isExtraImport": true,
+        "detail": "app.routers",
+        "documentation": {}
+    },
+    {
+        "label": "productivity",
+        "importPath": "app.routers",
+        "description": "app.routers",
+        "isExtraImport": true,
+        "detail": "app.routers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_otp",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def generate_otp(length: int = 6) -> str:\n    return ''.join(random.choices('0123456789', k=length))\ndef generate_reset_token() -> str:\n    return secrets.token_urlsafe(32)\ndef send_otp_email(email: str, otp_code: str, purpose: str = \"verification\"):\n    subject = f\"Your {purpose} code\"\n    html = f\"\"\"\n        <h2>{purpose.capitalize()} Code</h2>\n        <p>Your OTP is: <strong>{otp_code}</strong></p>\n        <p>It expires in 10 minutes.</p>",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "generate_reset_token",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def generate_reset_token() -> str:\n    return secrets.token_urlsafe(32)\ndef send_otp_email(email: str, otp_code: str, purpose: str = \"verification\"):\n    subject = f\"Your {purpose} code\"\n    html = f\"\"\"\n        <h2>{purpose.capitalize()} Code</h2>\n        <p>Your OTP is: <strong>{otp_code}</strong></p>\n        <p>It expires in 10 minutes.</p>\n    \"\"\"\n    try:",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "send_otp_email",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def send_otp_email(email: str, otp_code: str, purpose: str = \"verification\"):\n    subject = f\"Your {purpose} code\"\n    html = f\"\"\"\n        <h2>{purpose.capitalize()} Code</h2>\n        <p>Your OTP is: <strong>{otp_code}</strong></p>\n        <p>It expires in 10 minutes.</p>\n    \"\"\"\n    try:\n        resend.Emails.send({\n            \"from\": \"noreply@kensvic.com\",",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "send_reset_email",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def send_reset_email(email: str, reset_link: str):\n    html = f\"\"\"\n        <h2>Reset Your Password</h2>\n        <p>Click <a href=\"{reset_link}\">here</a> to reset your password.</p>\n        <p>This link expires in 15 minutes.</p>\n    \"\"\"\n    try:\n        resend.Emails.send({\n            \"from\": \"noreply@kensvic.com\",\n            \"to\": email,",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "register_user",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def register_user(\n    user: UserCreate,\n    background_tasks: BackgroundTasks,\n    db: Session = Depends(get_db)\n):\n    existing = db.query(User).filter(User.email == user.email).first()\n    if existing:\n        if not existing.is_verified:\n            otp = generate_otp()\n            existing.otp_code = otp",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "verify_otp",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def verify_otp(payload: OTPVerify, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == payload.email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    if user.is_verified:\n        return {\"message\": \"Account already verified\", \"verified\": True}\n    if user.otp_code != payload.otp_code:\n        raise HTTPException(status_code=400, detail=\"Invalid OTP\")\n    if user.otp_expires_at < datetime.utcnow():\n        raise HTTPException(status_code=400, detail=\"OTP expired. Request a new one.\")",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "resend_otp",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def resend_otp(\n    payload: OTPRequest,\n    background_tasks: BackgroundTasks,\n    db: Session = Depends(get_db)\n):\n    user = db.query(User).filter(User.email == payload.email).first()\n    if not user:\n        raise HTTPException(status_code=404, detail=\"User not found\")\n    if user.is_verified:\n        raise HTTPException(status_code=400, detail=\"Account already verified\")",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def login(user_credentials: UserLogin, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.email == user_credentials.email).first()\n    if not user:\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Invalid credentials\",\n            headers={\"WWW-Authenticate\": \"Bearer\"}\n        )\n    # Check lockout\n    if user.locked_until and user.locked_until > datetime.utcnow():",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "forgot_password",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def forgot_password(\n    payload: PasswordResetRequest,\n    background_tasks: BackgroundTasks,\n    db: Session = Depends(get_db)\n):\n    user = db.query(User).filter(User.email == payload.email).first()\n    if user:\n        token = generate_reset_token()\n        user.reset_password_token = token\n        user.reset_password_expires_at = datetime.utcnow() + timedelta(minutes=15)",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "reset_password",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def reset_password(payload: PasswordResetConfirm, db: Session = Depends(get_db)):\n    user = db.query(User).filter(User.reset_password_token == payload.token).first()\n    if not user or user.reset_password_expires_at < datetime.utcnow():\n        raise HTTPException(\n            status_code=status.HTTP_400_BAD_REQUEST,\n            detail=\"Invalid or expired reset token\"\n        )\n    user.password_hash = get_password_hash(payload.new_password)\n    user.reset_password_token = None\n    user.reset_password_expires_at = None",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "change_password",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def change_password(\n    payload: PasswordChange,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    if not verify_password(payload.current_password, current_user.password_hash):\n        raise HTTPException(\n            status_code=status.HTTP_401_UNAUTHORIZED,\n            detail=\"Current password is incorrect\"\n        )",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_me",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def get_me(current_user: User = Depends(get_current_user)):\n    return current_user\n# ═══════════════════════════════════════════\n# 9. DEACTIVATE ACCOUNT\n# ═══════════════════════════════════════════\n@router.delete(\"/me\", status_code=status.HTTP_200_OK)\ndef deactivate_account(\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "deactivate_account",
+        "kind": 2,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "def deactivate_account(\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    current_user.is_active = False\n    db.commit()\n    return {\"message\": \"Account deactivated successfully\"}",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/auth\", tags=[\"Authentication\"])\n# ─── Resend Setup ──────────────────────────\nresend.api_key = settings.resend_api_key\n# ─── Helpers ──────────────────────────────\ndef generate_otp(length: int = 6) -> str:\n    return ''.join(random.choices('0123456789', k=length))\ndef generate_reset_token() -> str:\n    return secrets.token_urlsafe(32)\ndef send_otp_email(email: str, otp_code: str, purpose: str = \"verification\"):\n    subject = f\"Your {purpose} code\"",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "resend.api_key",
+        "kind": 5,
+        "importPath": "app.routers.auth",
+        "description": "app.routers.auth",
+        "peekOfCode": "resend.api_key = settings.resend_api_key\n# ─── Helpers ──────────────────────────────\ndef generate_otp(length: int = 6) -> str:\n    return ''.join(random.choices('0123456789', k=length))\ndef generate_reset_token() -> str:\n    return secrets.token_urlsafe(32)\ndef send_otp_email(email: str, otp_code: str, purpose: str = \"verification\"):\n    subject = f\"Your {purpose} code\"\n    html = f\"\"\"\n        <h2>{purpose.capitalize()} Code</h2>",
+        "detail": "app.routers.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_daily_summary",
+        "kind": 2,
+        "importPath": "app.routers.productivity",
+        "description": "app.routers.productivity",
+        "peekOfCode": "def get_daily_summary(db: Session, user_id, target_date: date):\n    tasks = db.query(Task).filter(\n        Task.user_id == user_id,\n        Task.date == target_date\n    ).all()\n    total = len(tasks)\n    completed = sum(1 for t in tasks if t.status == StatusEnum.COMPLETED)\n    percentage = (completed / total * 100) if total > 0 else 0.0\n    return {\n        \"date\": target_date,",
+        "detail": "app.routers.productivity",
+        "documentation": {}
+    },
+    {
+        "label": "get_daily",
+        "kind": 2,
+        "importPath": "app.routers.productivity",
+        "description": "app.routers.productivity",
+        "peekOfCode": "def get_daily(\n    target_date: date,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    result = get_daily_summary(db, current_user.id, target_date)\n    if result[\"total_tasks\"] == 0:\n        raise HTTPException(status_code=404, detail=f\"No tasks found for {target_date}\")\n    return result\n# ─── HISTORY ──────────────────────────────",
+        "detail": "app.routers.productivity",
+        "documentation": {}
+    },
+    {
+        "label": "get_history",
+        "kind": 2,
+        "importPath": "app.routers.productivity",
+        "description": "app.routers.productivity",
+        "peekOfCode": "def get_history(\n    start_date: date = Query(..., description=\"Start date YYYY-MM-DD\"),\n    end_date: date = Query(..., description=\"End date YYYY-MM-DD\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    if start_date > end_date:\n        raise HTTPException(status_code=400, detail=\"Start date must be before end date\")\n    history = []\n    current = start_date",
+        "detail": "app.routers.productivity",
+        "documentation": {}
+    },
+    {
+        "label": "get_summary",
+        "kind": 2,
+        "importPath": "app.routers.productivity",
+        "description": "app.routers.productivity",
+        "peekOfCode": "def get_summary(\n    start_date: date = Query(..., description=\"Start date YYYY-MM-DD\"),\n    end_date: date = Query(..., description=\"End date YYYY-MM-DD\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    if start_date > end_date:\n        raise HTTPException(status_code=400, detail=\"Start date must be before end date\")\n    tasks = db.query(Task).filter(\n        Task.user_id == current_user.id,",
+        "detail": "app.routers.productivity",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routers.productivity",
+        "description": "app.routers.productivity",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/productivity\", tags=[\"Productivity\"])\n# ─── Helpers ──────────────────────────────\ndef get_daily_summary(db: Session, user_id, target_date: date):\n    tasks = db.query(Task).filter(\n        Task.user_id == user_id,\n        Task.date == target_date\n    ).all()\n    total = len(tasks)\n    completed = sum(1 for t in tasks if t.status == StatusEnum.COMPLETED)\n    percentage = (completed / total * 100) if total > 0 else 0.0",
+        "detail": "app.routers.productivity",
+        "documentation": {}
+    },
+    {
+        "label": "get_task_or_404",
+        "kind": 2,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "def get_task_or_404(task_id: UUID, user_id: UUID, db: Session) -> Task:\n    task = db.query(Task).filter(Task.id == task_id, Task.user_id == user_id).first()\n    if not task:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n    return task\n# ─── CREATE ────────────────────────────────\n@router.post(\"/\", response_model=TaskResponse, status_code=201)\ndef create_task(\n    task_data: CreateTaskRequest,\n    current_user: User = Depends(get_current_user),",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "create_task",
+        "kind": 2,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "def create_task(\n    task_data: CreateTaskRequest,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    task = Task(\n        user_id=current_user.id,\n        title=task_data.title,\n        description=task_data.description,\n        date=task_data.date,",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "list_tasks",
+        "kind": 2,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "def list_tasks(\n    page: int = Query(1, ge=1),\n    limit: int = Query(20, ge=1, le=100),\n    date_filter: Optional[date] = Query(None, alias=\"date\"),\n    status: Optional[StatusEnum] = None,\n    priority: Optional[PriorityEnum] = None,\n    sort: str = Query(\"created_at\", regex=\"^(created_at|updated_at|date|priority)$\"),\n    order: str = Query(\"desc\", regex=\"^(asc|desc)$\"),\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "get_task",
+        "kind": 2,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "def get_task(\n    task_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    return get_task_or_404(task_id, current_user.id, db)\n# ─── UPDATE ───────────────────────────────\n@router.patch(\"/{task_id}\", response_model=TaskResponse)\ndef update_task(\n    task_id: UUID,",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "update_task",
+        "kind": 2,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "def update_task(\n    task_id: UUID,\n    task_data: UpdateTaskRequest,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    task = get_task_or_404(task_id, current_user.id, db)\n    # Handle status change to set completed_at\n    if task_data.status == StatusEnum.COMPLETED and task.status != StatusEnum.COMPLETED:\n        task.completed_at = datetime.utcnow()",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "delete_task",
+        "kind": 2,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "def delete_task(\n    task_id: UUID,\n    current_user: User = Depends(get_current_user),\n    db: Session = Depends(get_db)\n):\n    task = get_task_or_404(task_id, current_user.id, db)\n    db.delete(task)\n    db.commit()",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "router",
+        "kind": 5,
+        "importPath": "app.routers.tasks",
+        "description": "app.routers.tasks",
+        "peekOfCode": "router = APIRouter(prefix=\"/api/v1/tasks\", tags=[\"Tasks\"])\n# ─── Helpers ──────────────────────────────\ndef get_task_or_404(task_id: UUID, user_id: UUID, db: Session) -> Task:\n    task = db.query(Task).filter(Task.id == task_id, Task.user_id == user_id).first()\n    if not task:\n        raise HTTPException(status_code=404, detail=\"Task not found\")\n    return task\n# ─── CREATE ────────────────────────────────\n@router.post(\"/\", response_model=TaskResponse, status_code=201)\ndef create_task(",
+        "detail": "app.routers.tasks",
+        "documentation": {}
+    },
+    {
+        "label": "get_password_hash",
+        "kind": 2,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "def get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.now(timezone.utc) + (expires_delta or timedelta(minutes=settings.access_token_expire_minutes))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, settings.secret_key, algorithm=settings.algorithm)\ndef get_current_user(",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "verify_password",
+        "kind": 2,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "def verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.now(timezone.utc) + (expires_delta or timedelta(minutes=settings.access_token_expire_minutes))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, settings.secret_key, algorithm=settings.algorithm)\ndef get_current_user(\n    credentials: HTTPAuthorizationCredentials = Depends(security),\n    db: Session = Depends(get_db)",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "create_access_token",
+        "kind": 2,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "def create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.now(timezone.utc) + (expires_delta or timedelta(minutes=settings.access_token_expire_minutes))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, settings.secret_key, algorithm=settings.algorithm)\ndef get_current_user(\n    credentials: HTTPAuthorizationCredentials = Depends(security),\n    db: Session = Depends(get_db)\n) -> User:\n    token = credentials.credentials",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_user",
+        "kind": 2,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "def get_current_user(\n    credentials: HTTPAuthorizationCredentials = Depends(security),\n    db: Session = Depends(get_db)\n) -> User:\n    token = credentials.credentials\n    try:\n        payload = jwt.decode(token, settings.secret_key, algorithms=[settings.algorithm])\n        user_id = payload.get(\"user_id\")\n        if user_id is None:\n            raise HTTPException(status_code=401, detail=\"Invalid token\")",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_current_active_user",
+        "kind": 2,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "def get_current_active_user(current_user: User = Depends(get_current_user)) -> User:\n    return current_user",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "pwd_context",
+        "kind": 5,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "pwd_context = CryptContext(schemes=[\"bcrypt\"], deprecated=\"auto\")\nsecurity = HTTPBearer()\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.now(timezone.utc) + (expires_delta or timedelta(minutes=settings.access_token_expire_minutes))\n    to_encode.update({\"exp\": expire})",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "security",
+        "kind": 5,
+        "importPath": "app.auth",
+        "description": "app.auth",
+        "peekOfCode": "security = HTTPBearer()\ndef get_password_hash(password: str) -> str:\n    return pwd_context.hash(password)\ndef verify_password(plain: str, hashed: str) -> bool:\n    return pwd_context.verify(plain, hashed)\ndef create_access_token(data: dict, expires_delta: timedelta = None) -> str:\n    to_encode = data.copy()\n    expire = datetime.now(timezone.utc) + (expires_delta or timedelta(minutes=settings.access_token_expire_minutes))\n    to_encode.update({\"exp\": expire})\n    return jwt.encode(to_encode, settings.secret_key, algorithm=settings.algorithm)",
+        "detail": "app.auth",
+        "documentation": {}
+    },
+    {
+        "label": "Settings",
+        "kind": 6,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "class Settings:\n    def __init__(self):\n        self.database_url = os.getenv(\"DATABASE_URL\")\n        self.secret_key = os.getenv(\"SECRET_KEY\", \"change-me\")\n        self.algorithm = os.getenv(\"ALGORITHM\", \"HS256\")\n        self.access_token_expire_minutes = int(os.getenv(\"ACCESS_TOKEN_EXPIRE_MINUTES\", 60))\n        self.resend_api_key = os.getenv(\"RESEND_API_KEY\")\n        self.frontend_url = os.getenv(\"FRONTEND_URL\", \"http://localhost:3000\")\nsettings = Settings()",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "kind": 5,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "settings = Settings()",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "engine = create_engine(\n    settings.database_url,\n    pool_size=5,           # Max connections in pool\n    max_overflow=10,       # Extra connections when pool is full\n    pool_timeout=30,       # Timeout for getting a connection\n    pool_recycle=1800,     # Recycle connections after 30 mins\n    pool_pre_ping=True     # Check connection before using\n)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "app.database",
+        "description": "app.database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "app.database",
+        "documentation": {}
+    },
+    {
+        "label": "PriorityEnum",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class PriorityEnum(str, enum.Enum):\n    LOW = \"low\"\n    MEDIUM = \"medium\"\n    HIGH = \"high\"\nclass StatusEnum(str, enum.Enum):\n    PENDING = \"pending\"\n    COMPLETED = \"completed\"\nclass User(Base):\n    __tablename__ = \"users\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "StatusEnum",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class StatusEnum(str, enum.Enum):\n    PENDING = \"pending\"\n    COMPLETED = \"completed\"\nclass User(Base):\n    __tablename__ = \"users\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    email = Column(String, unique=True, index=True, nullable=False)\n    password_hash = Column(String, nullable=False)\n    # Verification\n    is_verified = Column(Boolean, default=False)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class User(Base):\n    __tablename__ = \"users\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    email = Column(String, unique=True, index=True, nullable=False)\n    password_hash = Column(String, nullable=False)\n    # Verification\n    is_verified = Column(Boolean, default=False)\n    is_active = Column(Boolean, default=True)\n    # OTP\n    otp_code = Column(String(6), nullable=True)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Task",
+        "kind": 6,
+        "importPath": "app.models",
+        "description": "app.models",
+        "peekOfCode": "class Task(Base):\n    __tablename__ = \"tasks\"\n    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)\n    user_id = Column(UUID(as_uuid=True), ForeignKey(\"users.id\"), nullable=False)\n    title = Column(String(200), nullable=False)\n    description = Column(Text, nullable=True)\n    date = Column(Date, nullable=False)\n    priority = Column(Enum(PriorityEnum), default=PriorityEnum.MEDIUM)\n    status = Column(Enum(StatusEnum), default=StatusEnum.PENDING)\n    created_at = Column(DateTime, default=datetime.utcnow)",
+        "detail": "app.models",
+        "documentation": {}
+    },
+    {
+        "label": "Priority",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class Priority(str, Enum):\n    LOW = \"low\"\n    MEDIUM = \"medium\"\n    HIGH = \"high\"\nclass Status(str, Enum):\n    PENDING = \"pending\"\n    COMPLETED = \"completed\"\n# ─── AUTH SCHEMAS ───────────────────────────\nclass UserCreate(BaseModel):\n    email: EmailStr",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Status",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class Status(str, Enum):\n    PENDING = \"pending\"\n    COMPLETED = \"completed\"\n# ─── AUTH SCHEMAS ───────────────────────────\nclass UserCreate(BaseModel):\n    email: EmailStr\n    password: str = Field(..., min_length=8)\nclass UserLogin(BaseModel):\n    email: EmailStr\n    password: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreate",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class UserCreate(BaseModel):\n    email: EmailStr\n    password: str = Field(..., min_length=8)\nclass UserLogin(BaseModel):\n    email: EmailStr\n    password: str\nclass OTPVerify(BaseModel):\n    email: EmailStr\n    otp_code: str = Field(..., min_length=6, max_length=6)\nclass OTPRequest(BaseModel):",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserLogin",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class UserLogin(BaseModel):\n    email: EmailStr\n    password: str\nclass OTPVerify(BaseModel):\n    email: EmailStr\n    otp_code: str = Field(..., min_length=6, max_length=6)\nclass OTPRequest(BaseModel):\n    email: EmailStr\nclass PasswordResetRequest(BaseModel):\n    email: EmailStr",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "OTPVerify",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class OTPVerify(BaseModel):\n    email: EmailStr\n    otp_code: str = Field(..., min_length=6, max_length=6)\nclass OTPRequest(BaseModel):\n    email: EmailStr\nclass PasswordResetRequest(BaseModel):\n    email: EmailStr\nclass PasswordResetConfirm(BaseModel):\n    token: str\n    new_password: str = Field(..., min_length=8)",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "OTPRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class OTPRequest(BaseModel):\n    email: EmailStr\nclass PasswordResetRequest(BaseModel):\n    email: EmailStr\nclass PasswordResetConfirm(BaseModel):\n    token: str\n    new_password: str = Field(..., min_length=8)\nclass PasswordChange(BaseModel):\n    current_password: str\n    new_password: str = Field(..., min_length=8)",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class PasswordResetRequest(BaseModel):\n    email: EmailStr\nclass PasswordResetConfirm(BaseModel):\n    token: str\n    new_password: str = Field(..., min_length=8)\nclass PasswordChange(BaseModel):\n    current_password: str\n    new_password: str = Field(..., min_length=8)\nclass UserResponse(BaseModel):\n    id: UUID",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordResetConfirm",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class PasswordResetConfirm(BaseModel):\n    token: str\n    new_password: str = Field(..., min_length=8)\nclass PasswordChange(BaseModel):\n    current_password: str\n    new_password: str = Field(..., min_length=8)\nclass UserResponse(BaseModel):\n    id: UUID\n    email: EmailStr\n    is_verified: bool",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PasswordChange",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class PasswordChange(BaseModel):\n    current_password: str\n    new_password: str = Field(..., min_length=8)\nclass UserResponse(BaseModel):\n    id: UUID\n    email: EmailStr\n    is_verified: bool\n    is_active: bool\n    last_login_at: Optional[datetime]\n    created_at: datetime",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UserResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class UserResponse(BaseModel):\n    id: UUID\n    email: EmailStr\n    is_verified: bool\n    is_active: bool\n    last_login_at: Optional[datetime]\n    created_at: datetime\n    updated_at: datetime\nclass LoginResponse(BaseModel):\n    access_token: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "LoginResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class LoginResponse(BaseModel):\n    access_token: str\n    token_type: str = \"bearer\"\n    user: UserResponse\n# ─── TASK SCHEMAS ───────────────────────────\nclass CreateTaskRequest(BaseModel):\n    title: str = Field(..., min_length=1, max_length=200)\n    description: Optional[str] = Field(None, max_length=1000)\n    date: date\n    priority: Priority = Priority.MEDIUM",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CreateTaskRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class CreateTaskRequest(BaseModel):\n    title: str = Field(..., min_length=1, max_length=200)\n    description: Optional[str] = Field(None, max_length=1000)\n    date: date\n    priority: Priority = Priority.MEDIUM\nclass UpdateTaskRequest(BaseModel):\n    title: Optional[str] = Field(None, min_length=1, max_length=200)\n    description: Optional[str] = Field(None, max_length=1000)\n    date: Optional[date] = None\n    priority: Optional[Priority] = None",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateTaskRequest",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class UpdateTaskRequest(BaseModel):\n    title: Optional[str] = Field(None, min_length=1, max_length=200)\n    description: Optional[str] = Field(None, max_length=1000)\n    date: Optional[date] = None\n    priority: Optional[Priority] = None\n    status: Optional[Status] = None\nclass TaskResponse(BaseModel):\n    id: UUID\n    user_id: UUID\n    title: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class TaskResponse(BaseModel):\n    id: UUID\n    user_id: UUID\n    title: str\n    description: Optional[str]\n    date: date\n    priority: Priority\n    status: Status\n    created_at: datetime\n    updated_at: datetime",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "PaginationMeta",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class PaginationMeta(BaseModel):\n    page: int\n    limit: int\n    total: int\n    total_pages: int\nclass TaskListResponse(BaseModel):\n    items: List[TaskResponse]\n    pagination: PaginationMeta\n# ─── PRODUCTIVITY SCHEMAS ───────────────────\nclass DailySummaryResponse(BaseModel):",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "TaskListResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class TaskListResponse(BaseModel):\n    items: List[TaskResponse]\n    pagination: PaginationMeta\n# ─── PRODUCTIVITY SCHEMAS ───────────────────\nclass DailySummaryResponse(BaseModel):\n    date: date\n    total_tasks: int\n    completed_tasks: int\n    completion_percentage: float\nclass ProductivityHistoryResponse(BaseModel):",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "DailySummaryResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class DailySummaryResponse(BaseModel):\n    date: date\n    total_tasks: int\n    completed_tasks: int\n    completion_percentage: float\nclass ProductivityHistoryResponse(BaseModel):\n    history: List[DailySummaryResponse]\n    period: dict\nclass ProductivitySummaryResponse(BaseModel):\n    period: str",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProductivityHistoryResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ProductivityHistoryResponse(BaseModel):\n    history: List[DailySummaryResponse]\n    period: dict\nclass ProductivitySummaryResponse(BaseModel):\n    period: str\n    total_tasks: int\n    completed_tasks: int\n    completion_percentage: float",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "ProductivitySummaryResponse",
+        "kind": 6,
+        "importPath": "app.schemas",
+        "description": "app.schemas",
+        "peekOfCode": "class ProductivitySummaryResponse(BaseModel):\n    period: str\n    total_tasks: int\n    completed_tasks: int\n    completion_percentage: float",
+        "detail": "app.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def root():\n    return {\"message\": \"DayTrack API is running!\"}\n@app.get(\"/health\")\ndef health():\n    return {\"status\": \"healthy\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "health",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def health():\n    return {\"status\": \"healthy\"}",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI(\n    title=\"DayTrack API\",\n    description=\"Personal daily task planner with productivity analytics\",\n    version=\"1.0.0\"\n)\n# ─── CORS (for React) ──────────────────────────────\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],  # React dev server\n    allow_credentials=True,",
+        "detail": "main",
+        "documentation": {}
+    }
+]

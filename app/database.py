@@ -4,16 +4,19 @@ from sqlalchemy.orm import sessionmaker
 
 from app.config import settings
 
-# Create database engine
-engine = create_engine(settings.database_url)
+# Add pool settings to prevent connection exhaustion
+engine = create_engine(
+    settings.database_url,
+    pool_size=5,           # Max connections in pool
+    max_overflow=10,       # Extra connections when pool is full
+    pool_timeout=30,       # Timeout for getting a connection
+    pool_recycle=1800,     # Recycle connections after 30 mins
+    pool_pre_ping=True     # Check connection before using
+)
 
-# Create session factory
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-# Base class for models
 Base = declarative_base()
 
-# Dependency to get DB session
 def get_db():
     db = SessionLocal()
     try:
